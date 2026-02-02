@@ -1,0 +1,389 @@
+body {
+    background-color: rgb(48, 65, 46);
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.logo-img {
+    height: 130px;
+    width: auto;
+
+}
+.logo {
+    display: flex;
+    z-index: 2;
+}
+.header {
+    position: relative;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(29, 39, 28);
+}
+
+
+.nav-menu-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+}
+.active {
+    border-bottom: 1px white solid;
+}
+.nav-menu a:hover {
+    color: #a8d5ba;
+    transform: scale(1.2);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    width: 150px;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.search-btn:hover {
+    transform: scale(1.2);
+    color: #a8d5ba;
+}
+
+.hero-section {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/wallpapers-birds-01.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 61rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero-section h1 {
+    margin-top: 0;
+    font-size: 50px;
+
+
+}
+.hero-button {
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.hero-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+.description-section {
+    background-color: rgb(29, 39, 28);
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.description-content {
+    max-width: 1100px;
+    width: 100%;
+    padding: 60px 80px;
+    background-color: rgba(253, 253, 253, 0.92);
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.description-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #1d271c;
+}
+
+.description-content h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #3f5a3c;
+}
+
+.description-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #1f2a1f;
+}
+
+.nav-card-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+    background-color: rgb(67, 90, 64);
+}
+.nav-card-section img {
+    height: 20rem;
+    width: 23rem;
+    border-radius: 50%;
+}
+.nav-card {
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.card-section-button {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card-section-text {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: large;
+}
+
+.facts-container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 60px 80px;
+    background-color: rgba(253, 253, 253, 0.92);
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.facts-section {
+    background-color: rgb(29, 39, 28);
+    padding: 80px 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.facts-section-title {
+    color: #1d271c;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.facts-section-title-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.facts-section-title-item {
+    font-size: 18px;
+    color: #1f2a1f;
+    background-color: #e6efe7;
+    padding: 22px 30px;
+    padding-left: 65px;
+    border-radius: 18px;
+    position: relative;
+}
+
+
+.facts-section-title-item::before {
+    content: "🪶";
+    left: 25px;
+    font-size: 20px;
+}
+footer {
+    height: 7rem;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+footer p {
+    margin-top: 0;
+    color: white;
+
+}
+footer a  {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 1200px) {
+    .nav-card-section {
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .nav-card-section img {
+        width: 18rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-menu-section {
+        position: static;
+        transform: none;
+        margin: 20px 0;
+    }
+
+    .nav-menu {
+        gap: 25px;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .nav-card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-card-section img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .description-content,
+    .facts-container {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 45rem;
+    }
+
+    .hero-text {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .description-content h2,
+    .facts-section-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .description-content,
+    .facts-container {
+        padding: 30px 20px;
+    }
+
+    .facts-section-title-item {
+        padding-left: 50px;
+        font-size: 16px;
+    }
+
+    .nav-card-section img {
+        width: 15rem;
+        height: 15rem;
+    }
+}

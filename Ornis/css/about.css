@@ -1,0 +1,274 @@
+body {
+    background-color: rgb(48, 65, 46);
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.logo-img {
+    height: 130px;
+    width: auto;
+
+}
+
+.logo {
+    display: flex;
+    z-index: 2;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(29, 39, 28);
+}
+
+
+.nav-menu-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+}
+
+.active {
+    border-bottom: 1px white solid;
+}
+
+.nav-menu a:hover {
+    color: #a8d5ba;
+    transform: scale(1.2);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    width: 150px;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.search-btn:hover {
+    transform: scale(1.2);
+    color: #a8d5ba;
+}
+
+
+.about-page h1 {
+    color: #1d271c;
+    margin-bottom: 20px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 40px 0;
+}
+
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: #3f5a3c;
+    font-size: 14px;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #a8d5ba;
+}
+
+.submit-btn {
+    background-color: #3f5a3c;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background-color: #4d6e4a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-section {
+        display: flex;
+        justify-content: center;
+        padding: 80px 20px;
+    }
+
+    .main-content {
+        max-width: 1100px;
+        width: 100%;
+        background-color: rgba(253, 253, 253, 0.92);
+        padding: 60px 80px;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+footer {
+    height: 7rem;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    margin-top: 0;
+    color: white;
+
+}
+
+footer a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-menu-section {
+        position: static;
+        transform: none;
+        margin: 20px 0;
+    }
+
+    .main-section {
+        padding: 40px 15px;
+    }
+
+    .main-content {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page h1 {
+        font-size: 28px;
+    }
+
+    .feedback-section h2 {
+        font-size: 24px;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .feedback-form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        align-self: center;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 14px;
+    }
+}
